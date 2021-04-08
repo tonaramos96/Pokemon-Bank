@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pokemon Bank Desarrollo Aplicaciones Web</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo2.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    
+
+
+</head>
+
+<body>
+
+ 
+    <nav class="navbar navbar-light bg-light" style="background-color: #EAD1C3;">
+       <div class="container-fluid">
+       <a class="navbar-brand" href="#">Pokemon Bank DAW</a>
+        <button class="navbar-toggler navbar-toggler-right"  type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Analisis de Transacciones<i class="fas fa-bars"></i>
+        </button>
+       <button class="navbar-toggler navbar-toggler-right"  type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Historial de Transacciones<i class="fas fa-bars"></i>
+        </button>
+       <button onclick="cerrarsesion()"class="navbar-toggler navbar-toggler-right"  type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Cerrar Sesion<i class="fas fa-bars"></i>
+        </button>
+       </div>
+    </nav>
+
+
+	
+
+	<div class="total">
+		<center>
+			<div class="iniciotona">
+
+				HOLA TONATIU RAMOS, BIENVENIDO
+				<br>
+                <div class="texto1">
+                    ¿QUE DESEAS HACER HOY?
+                </div>
+				
+
+
+                <div id="lista" class="tabla2">
+                    <div class="tablas">
+                    <button  class="columnas" onclick="mostrarLista(event, 'listadeingresos')">Deposito</button>
+                    <button class="columnas" onclick="mostrarLista(event, 'listadeegresos')">Retiro</button>
+                    <button class="columnas" onclick="mostrarLista(event, 'listadeegresos')">Consulta de saldo</button>
+                    <button class="columnas" onclick="mostrarLista(event, 'listadeegresos')">Pago de servicios</button>
+                    </div>
+                 </div>
+
+				<div class="tablas">
+                    <div class="depositos">
+                        DEPOSITOS
+                        <br>
+                        <img src="img/deposito3.jpg" width="150" height="100">
+                        <br>
+                  Ingrese el monto a depositar
+                  <br>
+                  <input type="inputs" class="inputs" placeholder="Monto" onkeypress="return ValorNumerico(event)" required> 
+                  <br>
+                  seleccione la cuenta bancaria
+                  <br> 
+                  <select class="inputs" placeholder="Cuenta">
+                  <option value="cuenta1">12345678</option>
+                  <option value="cuenta2">11223344</option>
+                  <option value="cuenta3">Cuenta de terceros</option>
+                  </select>
+                  <button>Depositar</button> 
+                  <br>
+                  <h6>** puede depositar maximo 25 billetes o $500 dolares por transaccion**</h6>
+                  <br>       
+                </div>
+                </div>
+
+                <div class="tablas">
+                    <div class="depositos">
+                        RETIROS
+                        <br>
+                        <img src="img/retiros.jpg" width="125" height="100">
+                        <br>
+                  Ingrese el monto a retirar
+                  <br>
+                  <input type="inputs" class="inputs" placeholder="Monto" onkeypress="return ValorNumerico(event)" required> 
+                  <br>
+                  seleccione la cuenta bancaria
+                  <br> 
+                  <select class="inputs" placeholder="Cuenta">
+                  <option value="cuenta1">12345678</option>
+                  <option value="cuenta2">11223344</option>
+                  </select>
+                  <button>Retirar</button> 
+                  <br>
+                  <h6>** puede retirar max $500 por transaccion/Maximo 3 transacciones**</h6>
+                  <br>       
+                </div>
+                </div>
+
+
+                <div class="tablas">
+                    <div class="depositos">
+                        CONSULTA DE SALDOS
+                        <br>
+                        <img src="img/consulta.jpg" width="125" height="100">
+                        <br>
+                  seleccione la cuenta bancaria
+                  <br> 
+                  <select class="inputs" placeholder="Cuenta">
+                  <option value="cuenta1">12345678</option>
+                  <option value="cuenta2">11223344</option>
+                  </select>
+                  <button>Consultar</button> 
+                  <br>
+                  <h6>**Proteja sus cuentas contra el fraude llamando al numero 22100000*</h6>
+                  <br>       
+                </div>
+                </div>
+
+                <div class="tablas">
+                    <div class="depositos">
+                        PAGO DE SERVICIOS
+                        <br>
+                        <img src="img/pagoservicios.jpg" width="125" height="100">
+                        <br>
+                  ¿Que tipo de pago va a realizar?
+                  <br> 
+                  <select class="inputs" placeholder="Cuenta">
+                  <option value="pago1">Agua</option>
+                  <option value="pago2">Luz</option>
+                  <option value="pago2">Telefono</option>
+                  <option value="pago2">Internet</option>
+                  </select>
+                  <h5>Digite el codigo NPE de su factura</h5>
+                  <input type="inputs" class="inputs" placeholder="NPE">
+                  <br>
+                  seleccione la cuenta bancaria
+                  <br> 
+                  <select class="inputs" placeholder="Cuenta">
+                  <option value="cuenta1">12345678</option>
+                  <option value="cuenta2">11223344</option>
+                  </select>
+                  <button>Pagar</button> 
+                  <br>
+                  <h6>**Proteja sus cuentas contra el fraude llamando al numero 22100000*</h6>
+                  <br>       
+                </div>
+                </div>
+
+			</div>
+		</center>
+
+
+
+	</div>
+
+
+<script src="js/jquery-3.1.1.min.js"></script>  
+<script src="js/Script.js"></script> 
+  
+
+</body>
+
+
+
+<footer>
+    <div class="container text-center"> 
+         <p href="link" class="bootstrapcdn">DAW &copy;Herbert Tonatiú Recinos Ramos RR152792</p>
+         <p> UDB Virtual</p>
+    </div>
+</footer>
+
+</html>

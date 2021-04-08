@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap');
+
+#pai div{
+  display: none;
+}
+
+
+nav{
+	height: 70px;
+	background: #FFA233;
+	
+	
+	font-family: 'comic sans', sans-serif;
+	}
+
+
+h1{
+	color: #FD1C1C;
+	text-shadow: 2px 1px #D50C0C;
+	font-family: 'comic sans', sans-serif;
+	font-size: 10px;
+
+}
+
+
+h2{
+	color: #925104 ;
+	text-shadow: 1px 0px  #7C4402;
+	font-family: 'comic sans', sans-serif;
+	font-size: 10px;
+     font-weight: bold;
+}
+
+
+h3{
+	font-weight: bold;
+    color: #F3EF11 ;
+	font-family: 'Calibri', sans-serif;
+	padding-top: 20px;
+}
+
+
+body {
+  background-image:url(fondo5.jpg);
+  background-size: 100%;
+}
+
+div.inicio
+{
+    background-color: rgba(2, 5, 22  , 0.75);
+    padding: 20px;
+    margin: 40px auto;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #F6F6F9 ;
+ 
+    font-family: 'Monaco';
+    font-size: 35px;
+    font-weight: bold;
+    max-width: 750px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+div.iniciotona
+{
+    background-color: rgba(197, 25, 19, 0.9);
+    padding: 50px;
+    margin: 40px auto;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #F6F905 ;
+    text-shadow: 1px 0px  #D6D807;
+    font-family: 'Monaco';
+    font-size: 50px;
+    font-weight: bold;
+    max-width: 1000px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.tabla2 {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.columnas {
+    border-radius: 5px;
+    border: 0px;
+    width: 180px;
+    height: 60px;
+    background-color: #070FD8 ;
+    color: #D1D7E0;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.columnas:hover {
+    background-color: #0C1189;
+}
+
+.columnas2 {
+    border-radius: 5px;
+    top: 7px;
+    right: 7px;
+    width: 80px;
+    height: 40px;
+    background-color: #070FD8 ;
+    color: #D1D7E0;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+}
+
+div.texto1{
+  color: #DCDCE0;
+   
+    font-family: 'Monaco';
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.inputs {
+    font-size: 25px;
+    margin-bottom: 10px;
+    height: 50px;
+     width: 250px;
+    border-radius: 4px;
+    border: 0px;
+    background:  #D7DBDD;
+}
+
+.btingresar{
+    font-size: 15px;
+    margin-bottom: 10px;
+    height: 30px;
+    width: 150px;
+    border-radius: 4px;
+    border: 0px;
+    background:  #DA6E5D ;
+}
+
+
+footer {
+	background-color: rgba(255, 255, 255 , 0.8) ;
+  padding: 50px  0px;
+  margin-bottom: -10px;
+}
+
+footer .list-inline {
+  margin: 5;
+  padding: 5;
+  margin-bottom: -40px;
+}
+
+footer .copyright {
+  font-size: 50px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+
+
+
+
+.contenedor-form {
+    background: rgba(0,0,0,.7);
+    max-width: 500px;
+    width: 100%;
+    margin: 48px auto;
+    border-radius: 5px;
+    color: #fff;
+    position: relative;
+    /*padding: 40px;*/
+}
+
+
+
+.contenedor-form .toggle:hover {
+    border-top: 2px solid #0075d9;
+    border-bottom: 2px solid #0075d9;
+}
+
+.contenedor-form .toggle span {
+    letter-spacing: 1px;
+}
+
+.contenedor-form h2 {
+    margin: 0 0 28px 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+}
+.contenedor-form input[type="text"],
+.contenedor-form input[type="password"],
+.contenedor-form input[type="email"] {
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    margin: 0 0 20px 0;
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    border-bottom: 4px solid #ff851b;
+    box-sizing: border-box;
+    font-family: 'comic sans';
+    font-size: 14px;
+    font-weight:normal;
+    transition: all .5s ease;
+}
+
+.contenedor-form input[type="text"]:focus,
+.contenedor-form input[type="password"]:focus,
+.contenedor-form input[type="email"]:focus {
+    border-bottom: 4px solid #0075d9;
+}
+
+.contenedor-form input[type="submit"] {
+    background: #FF851B;
+    color: #FFF;
+    width: 100%;
+    border: none;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'comic sans';
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.contenedor-form input[type="submit"]:hover {
+    background: rgba(0, 117, 217, 0.7);
+}
+
+
+.contenedor-form .formulario {
+    display: none;
+    padding: 40px;
+}
+
+.contenedor-form .formulario:nth-child(2) {
+    display: block;
+}
+
+
+
